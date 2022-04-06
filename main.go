@@ -26,6 +26,10 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed listing all instances: %v", err)
 	}
+	if len(clusters.Items) == 0 {
+		fmt.Println("There are no clusters currently under this account")
+		os.Exit(0)
+	}
 
 	// Print a list of clusters and ask which ones to delete.
 	indexedClusters := make(map[int]string, len(clusters.Items))
