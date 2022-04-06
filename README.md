@@ -2,14 +2,14 @@
 
 ## install
 ```sh
-git clone https://github.com/kotajacob/kaaskiller && cd kaaskiller
+git clone https://github.com/kotajacob/kaaskill && cd kaaskill
 go build
 ```
 
 ## usage
 ```sh
 export CIVO_API_KEY="somefancyapikey"
-./kaaskiller
+./kaaskill
 ```
 
 It will fetch a list of all active Kubernetes clusters for your account and
